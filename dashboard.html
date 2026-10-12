@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard | SecureSpace</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body data-page="dashboard">
+  <header class="topbar">
+    <a class="brand dark-brand" href="/dashboard"><span class="brand-mark">S</span> SecureSpace</a>
+    <button id="logout-button" class="secondary-button" type="button">Log out</button>
+  </header>
+  <main class="dashboard-main">
+    <p class="eyebrow">YOUR PRIVATE SPACE</p>
+    <h1>Welcome, <span id="user-name">...</span></h1>
+    <p class="subheading">You're signed in. This page is available only to authenticated users.</p>
+    <div class="dashboard-grid">
+      <section class="info-card">
+        <div class="card-icon">✓</div>
+        <h2>Account protected</h2>
+        <p>Your password is stored as a bcrypt hash, not as readable text.</p>
+      </section>
+      <section class="info-card">
+        <div class="card-icon">◈</div>
+        <h2>Session active</h2>
+        <p>Your session is managed on the server and uses an HTTP-only cookie.</p>
+      </section>
+      <section class="info-card">
+        <div class="card-icon">⌁</div>
+        <h2>You're in control</h2>
+        <p>Log out when you're finished to invalidate your current session.</p>
+      </section>
+    </div>
+    <div class="alert" id="alert" role="alert" aria-live="polite" hidden></div>
+  </main>
+  <footer class="page-footer">SecureSpace · Demonstration authentication project</footer>
+</body>
+</html>

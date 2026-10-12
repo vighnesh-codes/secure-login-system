@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sign in to your SecureSpace account.">
+  <title>Sign In | SecureSpace</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/app.js" defer></script>
+</head>
+<body data-page="login">
+  <main class="auth-layout">
+    <section class="brand-panel">
+      <a class="brand" href="/login"><span class="brand-mark">S</span> SecureSpace</a>
+      <div class="brand-copy">
+        <p class="eyebrow">YOUR SECURITY, OUR PRIORITY</p>
+        <h1>A safer space<br>for your digital life.</h1>
+        <p>Sign in securely and get back to what matters. Your account is protected with modern authentication practices.</p>
+      </div>
+      <div class="security-note"><span class="status-dot"></span> Built with security in mind</div>
+    </section>
+    <section class="form-panel">
+      <div class="form-wrap">
+        <div class="mobile-brand"><span class="brand-mark">S</span> SecureSpace</div>
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Sign in to your account</h2>
+        <p class="subheading">Enter your details to continue.</p>
+        <div class="alert" id="alert" role="alert" aria-live="polite" hidden></div>
+        <form id="login-form" novalidate>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required maxlength="254">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required maxlength="72">
+          <button class="primary-button" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="switch-link">Don't have an account? <a href="/register">Create account</a></p>
+        <p class="fine-print">Protected session · Passwords are never stored in plain text</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
